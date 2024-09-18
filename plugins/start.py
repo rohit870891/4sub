@@ -66,7 +66,7 @@ async def start_command(client: Client, message: Message):
         for msg in messages:
 
             original_caption = msg.caption.html if msg.caption else ""
-                if CUSTOM_CAPTION:
+            if CUSTOM_CAPTION:
                     caption = f"{original_caption}\n\n{CUSTOM_CAPTION}"
                 else:
                     caption = original_caption
